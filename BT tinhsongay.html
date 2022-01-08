@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT tính số ngày trong tháng</title>
+</head>
+<body>
+<form>
+    <input type="text" id="month">
+    <button onclick="tinhngay();">Tính số ngày</button>
+    <p id="result"></p>
+</form>
+  <script>
+
+      function tinhngay(){
+          let month = Number(document.getElementById("month").value);
+          let result;
+          switch (month) {
+              case 1:
+                  result = "tháng 1 có 31 ngày"
+
+                  break;
+              case 3:
+                  result = "tháng 3 có 31 ngày"
+                  break;
+              case 5:
+                  result = "tháng 5 có 31 ngày"
+                  break;
+              case 7:
+                  result = "tháng 7 có 31 ngày"
+                  break;
+              case 8:
+                  result = "tháng 8 có 31 ngày"
+                  break;
+              case 10:
+                  result = "tháng 10 có 31 ngày"
+                  break;
+              case 12:
+                  result = "tháng 12 có 31 ngày"
+                break;
+              case 2:
+                  result = "tháng 2 có 28 hoặc 29 ngày"
+                break;
+              case 4:
+                  result = "tháng 4 có 30 ngày"
+                  break;
+              case 6:
+                  result = "tháng 6, có 30 ngày"
+                  break;
+              case 9:
+                  result = "tháng 9 có 30 ngày"
+                  break;
+              case 11:
+                  result = "tháng 11 có 30 ngày"
+                break;
+          }
+          document.getElementById("result").innerText = "kết quả" + result;
+      }
+  </script>
+</body>
+</html>
